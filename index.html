@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Christopher Quiambao Luna, Coder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Roboto');
+      body {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+      }
+      footer {
+        font-size: 13px;
+        text-align: right;
+      }
+      main > section {
+        flex: 1 1 auto;
+      }
+      .author-info {
+        width: 20%;
+        margin: 10px;
+      }
+      .author-info > div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .author-icon {
+        width: 80px;
+        height: 80px;
+        background-color: brown;
+        border-radius: 50%;
+        margin: auto;
+      }
+      .author-name {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .author-title {
+        font-size: 13px;
+        font-style: italic;
+      }
+      .author-quote {
+        font-size: 12px;
+        font-style: italic;
+      }
+      .author-social-item {
+        margin: 5px 5px;
+        font-size: 13px;
+      }
+      .author-social-item a:link,
+      .author-social-item a:active,
+      .author-social-item a:visited,
+      .author-social-item a:hover {
+        color: black;
+        text-decoration: none;
+      }
+      @media screen and (max-width: 500px) {
+        main {
+          flex-direction: column;
+        }
+        .author-info {
+          width: auto;
+          text-align: center;
+        }
+        .author-social-item {
+          display: inline;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="author-info">
+        <div class="author-icon">
+          <img class="author-icon" src="assets/images/bio-photo.jpg" />
+        </div>
+        <div class="author-name">
+          Chris Luna
+        </div>
+        <div class="author-title">
+          <span>Software Engineer, Bioinformatics</span><br />
+          <span>Web Technologies Fanboy</span>
+        </div>
+        <div class="author-quote">
+          <span>
+          'To really know. That is, to be transformed by what one knows.'
+          </span><br/>
+          <span>- The Song of The Bird</span>
+        </div>
+        <div class="author-social">
+          <div class="author-social-item">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:mycql04@gmail.com">Email</a>
+          </div>
+          <div class="author-social-item">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <a href="http://linkedin.com/in/cqluna">LinkedIn</a>
+          </div>
+          <div class="author-social-item">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <a href="http://twitter.com/@mycql">Twitter</a>
+          </div>
+          <div class="author-social-item">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="http://github.com/mycql">Github</a>
+          </div>
+        </div>
+      </header>
+      <section>
+      </section>
+    </main>
+    <footer>
+      © 2017 Chris Luna. Powered by the stuff dreams are made of.
+    </footer>
+  </body>
+</html>
