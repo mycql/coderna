@@ -1,0 +1,79 @@
+style(type="text/css").
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  body {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+  }
+  footer {
+    font-size: 13px;
+    text-align: right;
+  }
+  main > section {
+    flex: 1 1 auto;
+  }
+  .author-info {
+    width: 20%;
+    margin: 10px;
+  }
+  .author-info > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .author-icon {
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .author-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .author-title {
+    font-size: 13px;
+    font-style: italic;
+  }
+  .author-quote {
+    font-size: 12px;
+    font-style: italic;
+  }
+  .author-social-item {
+    margin: 5px 5px;
+    font-size: 13px;
+  }
+  .author-social-icon {
+    margin-right: 4px;
+  }
+  .author-social-item a:link,
+  .author-social-item a:active,
+  .author-social-item a:visited,
+  .author-social-item a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 500px) {
+    main {
+      flex-direction: column;
+    }
+    .author-info {
+      width: auto;
+      text-align: center;
+    }
+    .author-social-item {
+      display: inline;
+    }
+  }

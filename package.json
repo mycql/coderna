@@ -1,0 +1,27 @@
+{
+  "name": "mycql.github.io",
+  "version": "1.0.0",
+  "description": "Homepage, Resume, Blog",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mycql/mycql.github.io.git"
+  },
+  "keywords": [
+    "Homepage",
+    "Resume",
+    "Blog"
+  ],
+  "author": "Chris Luna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mycql/mycql.github.io/issues"
+  },
+  "homepage": "http://mycql.github.io",
+  "dependencies": {
+    "pug": "^2.0.0-beta11"
+  }
+}
