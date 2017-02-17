@@ -2,9 +2,10 @@
   "name": "mycql.github.io",
   "version": "1.0.0",
   "description": "Homepage, Resume, Blog",
-  "main": "index.js",
   "scripts": {
-    "compile": "node index.js"
+    "compile": "npm run clean node scripts/compile.js",
+    "start": "npm run clean && node scripts/serve.js",
+    "clean": "rimraf ./build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
     "url": "https://github.com/mycql/mycql.github.io/issues"
   },
   "homepage": "http://mycql.github.io",
-  "dependencies": {
-    "pug": "^2.0.0-beta11"
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "pug": "^2.0.0-beta11",
+    "rimraf": "^2.5.4"
   }
 }
