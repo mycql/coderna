@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Homepage, Resume, Blog",
   "scripts": {
-    "compile": "npm run clean node scripts/compile.js",
+    "compile": "npm run clean && node scripts/compile.js",
     "start": "npm run clean && node scripts/serve.js",
     "clean": "rimraf ./build"
   },
