@@ -1,31 +1,8 @@
 style(type="text/css").
-  @import url('https://fonts.googleapis.com/css?family=Roboto');
-  body {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-family: 'Roboto', sans-serif;
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-  }
-  footer {
-    font-size: 13px;
-    text-align: right;
-  }
-  main > section {
-    flex: 1 1 auto;
-  }
   .author-info {
     width: 20%;
     margin: 10px;
+    min-width: 150px;
   }
   .author-info > div {
     margin-top: 10px;
@@ -52,8 +29,10 @@ style(type="text/css").
     font-style: italic;
   }
   .author-social-item {
-    margin: 5px 5px;
+    margin: 10px 5px;
     font-size: 13px;
+    transition: font-size 0.2s;
+    line-height: 16px;
   }
   .author-social-icon {
     margin-right: 4px;
@@ -65,10 +44,11 @@ style(type="text/css").
     color: black;
     text-decoration: none;
   }
+  .author-social-item:hover {
+    font-size: 15px;
+  }
+
   @media screen and (max-width: 500px) {
-    main {
-      flex-direction: column;
-    }
     .author-info {
       width: auto;
       text-align: center;

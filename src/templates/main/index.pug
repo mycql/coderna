@@ -7,11 +7,14 @@ html
     meta(name="keywords" content="Github Pages, Personal Bio, Resume")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title CodeRNA
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
     include styles.pug
+    include ../header/styles.pug
+    include ../resume/styles.pug
   body
     main
-      include header.pug
-      include content.pug
+      include ../header/header.pug
+      include ../resume/resume.pug
     footer
-      include footer.pug
+      include ../footer/footer.pug

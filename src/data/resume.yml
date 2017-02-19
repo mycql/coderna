@@ -1,0 +1,22 @@
+about:
+  summary:
+    - Engineer by heart and passionate about all things software.
+    - Software Development and R&D is my career. I find satisfaction in coming up with answers to real world problems.
+    - I have been developing solutions for several industries through the years. Looking good on paper is not my thing. I design. I engineer. I implement. I get things done.
+    - Implementing cloud solutions for modern bioinformatics workflows keep me busy during the day and hackernews articles with coffee wraps up my evenings.
+
+experiences:
+  - year:
+      start: 2006-01-06
+      end: 2008-09-28
+    summary: >
+      Started out as a layout engineer doing chip design.
+      Eventually found my passion for software and developed
+      layout automation tools for cell libraries.'
+  - year:
+      start: 2009-03-01
+      end: 2010-06-27
+    summary: >
+      Full stack developer for company's flagship SaaS for sales automation and inventory management for SMEs.
+      Software is built on open-source technologies, hosted on a grid infrastructure (now known as cloud) and
+      integrates with ERP systems (e.g. Netsuite)

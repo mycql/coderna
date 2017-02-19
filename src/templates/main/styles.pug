@@ -1,0 +1,33 @@
+style(type="text/css").
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+  ::selection {
+    background-color: pink;
+  }
+  body {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+  }
+  footer {
+    font-size: 13px;
+    text-align: right;
+  }
+  main > section {
+    flex: 1 1 auto;
+  }
+  @media screen and (max-width: 500px) {
+    main {
+      flex-direction: column;
+    }
+  }

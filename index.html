@@ -7,9 +7,13 @@
     <meta name="keywords" content="Github Pages, Personal Bio, Resume">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeRNA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
       @import url('https://fonts.googleapis.com/css?family=Roboto');
+      ::selection {
+        background-color: pink;
+      }
       body {
         position: fixed;
         display: flex;
@@ -33,9 +37,17 @@
       main > section {
         flex: 1 1 auto;
       }
+      @media screen and (max-width: 500px) {
+        main {
+          flex-direction: column;
+        }
+      }
+    </style>
+    <style type="text/css">
       .author-info {
         width: 20%;
         margin: 10px;
+        min-width: 150px;
       }
       .author-info > div {
         margin-top: 10px;
@@ -62,8 +74,10 @@
         font-style: italic;
       }
       .author-social-item {
-        margin: 5px 5px;
+        margin: 10px 5px;
         font-size: 13px;
+        transition: font-size 0.2s;
+        line-height: 16px;
       }
       .author-social-icon {
         margin-right: 4px;
@@ -75,10 +89,11 @@
         color: black;
         text-decoration: none;
       }
+      .author-social-item:hover {
+        font-size: 15px;
+      }
+      
       @media screen and (max-width: 500px) {
-        main {
-          flex-direction: column;
-        }
         .author-info {
           width: auto;
           text-align: center;
@@ -86,6 +101,25 @@
         .author-social-item {
           display: inline;
         }
+      }
+    </style>
+    <style type="text/css">
+      .author-resume {
+        font-size: 14px;
+      }
+      .author-about-content {
+        font-size: 14px;
+      }
+      .author-about-content a {
+        color: black;
+        font-weight: bold;
+        text-decoration: unset;
+      }
+      .author-experience-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: pink;
       }
     </style>
   </head>
@@ -103,7 +137,32 @@
           <div class="author-social-item"><i class="author-social-icon fa fa-github" aria-hidden="true"></i><a href="http://github.com/mycql">Github</a></div>
         </div>
       </header>
-      <section></section>
+      <section class="author-resume">
+        <section class="author-about">
+          <h3>About Me</h3>
+          <div class="author-about-content">
+            <p>Engineer by heart and passionate about all things software.</p>
+            <p>Software Development and R&amp;D is my career. I find satisfaction in coming up with answers to real world problems.</p>
+            <p>I have been developing solutions for several industries through the years. Looking good on paper is not my thing. I design. I engineer. I implement. I get things done.</p>
+            <p>Implementing cloud solutions for modern bioinformatics workflows keep me busy during the day and hackernews articles with coffee wraps up my evenings.</p>
+            <p>I live to learn.<a href="https://twitter.com/hashtag/juniordevforlife">#juniordevforlife</a></p>
+          </div>
+        </section>
+        <section class="author-experience">
+          <h3>Experience</h3>
+          <div class="author-experience-item">
+            <div class="author-experience-icon"><img class="author-experience-icon" src="assets/images/bio-photo.jpg"></div><span>Started out as a layout engineer doing chip design. Eventually found my passion for software and developed layout automation tools for cell libraries.'
+</span>
+          </div>
+          <div class="author-experience-item">
+            <div class="author-experience-icon"><img class="author-experience-icon" src="assets/images/bio-photo.jpg"></div><span>Full stack developer for company's flagship SaaS for sales automation and inventory management for SMEs. Software is built on open-source technologies, hosted on a grid infrastructure (now known as cloud) and integrates with ERP systems (e.g. Netsuite)
+</span>
+          </div>
+        </section>
+        <section class="author-skills">
+          <h3>What I can do</h3>
+        </section>
+      </section>
     </main>
     <footer>© 2017 Chris Luna. Powered by the stuff dreams are made of.</footer>
   </body>

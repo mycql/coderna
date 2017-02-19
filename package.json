@@ -24,6 +24,7 @@
   "homepage": "http://mycql.github.io",
   "devDependencies": {
     "browser-sync": "^2.18.8",
+    "js-yaml": "^3.8.1",
     "pug": "^2.0.0-beta11",
     "rimraf": "^2.5.4"
   }
