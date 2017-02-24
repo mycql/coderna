@@ -9,126 +9,15 @@
     <title>CodeRNA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Roboto');
-      ::selection {
-        background-color: pink;
-      }
-      body {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        font-family: 'Roboto', sans-serif;
-      }
-      main {
-        display: flex;
-        flex-direction: row;
-        flex: 1 1 auto;
-      }
-      footer {
-        font-size: 13px;
-        text-align: right;
-      }
-      main > section {
-        flex: 1 1 auto;
-      }
-      @media screen and (max-width: 500px) {
-        main {
-          flex-direction: column;
-        }
-      }
-    </style>
-    <style type="text/css">
-      .author-info {
-        width: 20%;
-        margin: 10px;
-        min-width: 150px;
-      }
-      .author-info > div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-      .author-icon {
-        width: 80px;
-        height: 80px;
-        background-color: brown;
-        border-radius: 50%;
-        margin: auto;
-      }
-      .author-name {
-        text-align: center;
-        font-weight: bold;
-        font-size: 18px;
-      }
-      .author-title {
-        font-size: 13px;
-        font-style: italic;
-      }
-      .author-quote {
-        font-size: 12px;
-        font-style: italic;
-      }
-      .author-social-item {
-        margin: 10px 5px;
-        font-size: 13px;
-        transition: font-size 0.2s;
-        line-height: 16px;
-      }
-      .author-social-icon {
-        margin-right: 4px;
-      }
-      .author-social-item a:link,
-      .author-social-item a:active,
-      .author-social-item a:visited,
-      .author-social-item a:hover {
-        color: black;
-        text-decoration: none;
-      }
-      .author-social-item:hover {
-        font-size: 15px;
-      }
-      
-      @media screen and (max-width: 500px) {
-        .author-info {
-          width: auto;
-          text-align: center;
-        }
-        .author-social-item {
-          display: inline;
-        }
-      }
-    </style>
-    <style type="text/css">
-      .author-resume {
-        font-size: 14px;
-      }
-      .author-about-content {
-        font-size: 14px;
-      }
-      .author-about-content a {
-        color: black;
-        font-weight: bold;
-        text-decoration: unset;
-      }
-      .author-experience-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: pink;
-      }
-    </style>
+    <style type="text/css">@import url("https://fonts.googleapis.com/css?family=Roboto");body{position:fixed;display:flex;flex-direction:column;margin:0;top:0;left:0;right:0;bottom:0;font-family:'Roboto', sans-serif}body ::selection{background-color:pink}body main{display:flex;flex-direction:row;flex:1 1 auto}body main>section{flex:1 1 auto}body footer{font-size:13px;text-align:right}@media screen and (max-width: 500px){main{flex-direction:column}}.author-info{width:20%;margin:10px;min-width:150px}.author-info .author-icon{width:80px;height:80px;background-color:brown;border-radius:50%;margin:auto}.author-info .author-name{text-align:center;font-weight:bold;font-size:18px}.author-info .author-title{font-size:13px;font-style:italic}.author-info .author-quote{font-size:12px;font-style:italic}.author-info .author-social .author-social-item{margin:10px 5px;font-size:13px;transition:font-size 0.2s;line-height:16px}.author-info .author-social .author-social-icon{margin-right:4px}.author-info .author-social .author-social-item a:link,.author-info .author-social .author-social-item a:active,.author-info .author-social .author-social-item a:visited,.author-info .author-social .author-social-item a:hover{color:black;text-decoration:none}.author-info .author-social .author-social-item:hover{font-size:15px}.author-info>div{margin-top:10px;margin-bottom:10px}@media screen and (max-width: 500px){.author-info{width:auto;text-align:center}.author-info .author-social .author-social-item{display:inline}}.author-resume{font-size:14px}.author-resume .author-about .author-about-content{font-size:14px}.author-resume .author-about .author-about-content a{color:black;font-weight:bold;text-decoration:unset}.author-resume .author-experience .author-experience-items{display:flex;flex-direction:row}.author-resume .author-experience .author-experience-items .author-experience-item{display:flex;flex-direction:column;flex:1 1 auto}.author-resume .author-experience .author-experience-items .author-experience-item .author-experience-header{display:flex;flex-direction:row}.author-resume .author-experience .author-experience-items .author-experience-item .author-experience-header .author-experience-icon{width:40px;height:40px;border-radius:50%;background-color:#87CEEB}.author-resume .author-experience .author-experience-items .author-experience-item .author-experience-header .author-experience-summary{flex:1 1 auto}.author-resume .author-experience .author-experience-items .author-experience-item .author-experience-header .author-experience-splitter{background-color:#87CEEB;height:5px}.author-resume .author-experience .author-experience-items .author-experience-item .author-experience-body{flex:1 1 auto}
+</style>
   </head>
   <body>
     <main>
       <header class="author-info">
         <div class="author-icon"><img class="author-icon" src="assets/images/bio-photo.jpg"></div>
         <div class="author-name">Chris Luna</div>
-        <div class="author-title"><span>Software Engineer, Bioinformatics</span><br/><span>Web Technologies Fanboy</span></div>
+        <div class="author-title"><span>Software Engineer, Bioinformatics</span><br/><span>Web Technologies Enthusiast</span></div>
         <div class="author-quote"><span>'To really know. That is, to be transformed by what one knows.'</span><br/><span>- The Song of The Bird</span></div>
         <div class="author-social">
           <div class="author-social-item"><i class="author-social-icon fa fa-envelope" aria-hidden="true"></i><a href="mailto:mycql04@gmail.com">Email</a></div>
@@ -142,21 +31,74 @@
           <h3>About Me</h3>
           <div class="author-about-content">
             <p>Engineer by heart and passionate about all things software.</p>
-            <p>Software Development and R&amp;D is my career. I find satisfaction in coming up with answers to real world problems.</p>
-            <p>I have been developing solutions for several industries through the years. Looking good on paper is not my thing. I design. I engineer. I implement. I get things done.</p>
+            <p>Looking good on paper is not my thing. I design. I engineer. I get things done.</p>
             <p>Implementing cloud solutions for modern bioinformatics workflows keep me busy during the day and hackernews articles with coffee wraps up my evenings.</p>
             <p>I live to learn.<a href="https://twitter.com/hashtag/juniordevforlife">#juniordevforlife</a></p>
           </div>
         </section>
         <section class="author-experience">
           <h3>Experience</h3>
-          <div class="author-experience-item">
-            <div class="author-experience-icon"><img class="author-experience-icon" src="assets/images/bio-photo.jpg"></div><span>Started out as a layout engineer doing chip design. Eventually found my passion for software and developed layout automation tools for cell libraries.'
-</span>
-          </div>
-          <div class="author-experience-item">
-            <div class="author-experience-icon"><img class="author-experience-icon" src="assets/images/bio-photo.jpg"></div><span>Full stack developer for company's flagship SaaS for sales automation and inventory management for SMEs. Software is built on open-source technologies, hosted on a grid infrastructure (now known as cloud) and integrates with ERP systems (e.g. Netsuite)
-</span>
+          <div class="author-experience-items">
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Senior Software Engineer</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Software Engineer</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Senior Application Consultant</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Software Developer</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Software Engineer</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
+            <div class="author-experience-item">
+              <div class="author-experience-header">
+                <div class="author-experience-icon"></div>
+                <div class="author-experience-summary">
+                  <div>Layout Engineer</div>
+                  <div class="author-experience-splitter"></div>
+                </div>
+              </div>
+              <div class="author-experince-body"></div>
+            </div>
           </div>
         </section>
         <section class="author-skills">

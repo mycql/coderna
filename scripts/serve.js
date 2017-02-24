@@ -19,7 +19,11 @@ bs.init({
   files: [
     indexFilePath,
     {
-      match: [renderer.templatesPath + '**/*.pug'],
+      match: [
+        `${renderer.dataPath}**/*.yml`,
+        `${renderer.templatesPath}**/*.pug`,
+        `${renderer.templatesPath}**/*.scss`
+      ],
       fn: function (event, file) {
         if (event === 'change') {
           renderer.render(indexFilePath);

@@ -1,0 +1,21 @@
+section(class="author-resume")
+  section(class="author-about")
+    h3 About Me
+    div(class="author-about-content")
+      each summary in about.summary
+        p #{summary}
+      p I live to learn.
+        a(href="https://twitter.com/hashtag/juniordevforlife") #juniordevforlife
+  section(class="author-experience")
+    h3 Experience
+    div(class="author-experience-items")
+      each experience in experiences
+        div(class="author-experience-item")
+          div(class="author-experience-header")
+            div(class="author-experience-icon")
+            div(class="author-experience-summary")
+              div #{experience.role}
+              div(class="author-experience-splitter")
+          div(class="author-experince-body")
+  section(class="author-skills")
+    h3 What I can do

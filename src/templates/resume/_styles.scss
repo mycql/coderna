@@ -1,0 +1,44 @@
+.author-resume {
+  font-size: 14px;
+  .author-about {
+    .author-about-content {
+      font-size: 14px;
+    }
+    .author-about-content a {
+      color: black;
+      font-weight: bold;
+      text-decoration: unset;
+    }
+  }
+  .author-experience {
+    .author-experience-items {
+      display: flex;
+      flex-direction: row;
+      .author-experience-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        .author-experience-header {
+          display: flex;
+          flex-direction: row;
+          .author-experience-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #87CEEB;
+          }
+          .author-experience-summary {
+            flex: 1 1 auto;
+          }
+          .author-experience-splitter {
+            background-color: #87CEEB;
+            height: 5px;
+          }
+        }
+        .author-experience-body {
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+}
