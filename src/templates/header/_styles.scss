@@ -63,3 +63,26 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) and (max-height: 450px) {
+  .author-info {
+    .author-icon:not(img) {
+      float: left;
+      margin-top: 25px;
+    }
+    .author-name {
+      font-size: 14px;
+    }
+    .author-title {
+      font-size: 11px;
+    }
+    .author-quote {
+      font-size: 10px;
+    }
+    .author-social {
+      .author-social-item {
+        font-size: 8px;
+      }
+    }
+  }
+}
