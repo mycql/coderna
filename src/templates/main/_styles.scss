@@ -10,21 +10,23 @@ body {
   bottom: 0;
   font-family: 'Roboto', sans-serif;
   ::selection {
-    background-color: pink;
-  }
-  main {
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-  }
-  main > section {
-    flex: 1 1 auto;
-  }
-  footer {
-    font-size: 13px;
-    text-align: right;
+    background-color: lightgray;
   }
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  margin: 10px;
+  margin-right: 0;
+}
+footer {
+  font-size: 13px;
+  text-align: right;
+  margin: 0 10px 0 10px;
+}
+
 @media screen and (max-width: 500px) {
   main {
     flex-direction: column;

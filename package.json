@@ -23,9 +23,11 @@
   },
   "homepage": "http://mycql.github.io",
   "devDependencies": {
+    "autoprefixer": "^6.7.5",
     "browser-sync": "^2.18.8",
     "js-yaml": "^3.8.1",
     "node-sass": "^4.5.0",
+    "postcss": "^5.2.15",
     "pug": "^2.0.0-beta11",
     "rimraf": "^2.5.4"
   }
