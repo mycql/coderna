@@ -13,8 +13,8 @@ timezone: 'Asia/Singapore'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://mycql.github.io/
-root: /
+url: https://mycql.github.io/coderna.github.io/
+root: /coderna.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
