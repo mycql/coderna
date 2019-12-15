@@ -1,0 +1,87 @@
+experiences:
+  - year:
+        start: 2019-10-01
+        end: Present
+    company: Thermo Fisher Scientific
+    icon: tfs.png
+    role: Senior Staff Software Engineer
+    department: Digital Engineering
+    summary:
+        - Still doing the same role but now with more collaboration across more engineering organizations (and more politics of course ^_^)
+
+  - year:
+      start: 2017-05-01
+      end: 2019-10-01
+    company: Thermo Fisher Scientific
+    icon: tfs.png
+    role: Staff Software Engineer
+    department: Digital Engineering
+    summary:
+        - Lead distributed development teams in Singapore and India and collaborate with R&D and engineering groups across Germany, USA and Mexico
+        - Build solutions to accelerate scientific research using advancements in gene synthesis, genome editing and bioinformatics through design and analysis software
+        - Drive revenue conversion for oligo and gene synthesis businesses by developing better e-commerce tools
+        - Responsible for developing the core of synthetic biology platform services and core UI components
+        - Design and architect libraries and frameworks across the stack
+
+  - year:
+      start: 2014-05-01
+      end: 2017-04-01
+    company: Thermo Fisher Scientific
+    icon: tfs.png
+    role: Senior Software Engineer
+    department: Emerging Technologies
+    summary:
+      - Architect bioinformatics solutions and tools and lead the development of the company's molecular and synthetic biology visualization software and analysis tool suite.
+      - Develop distributed services for the next generation cloud based synthetic biology platform and tools leveraging on key AWS services.
+      - Instrumental in delivering 8 products to the cloud platform, in a span of a year either in a core contributor or lead role.
+      - Build CI/CD pipelines for synthetic biology cloud products.
+      - Coordinate with distributed, cross-functional teams of scientists, product managers and development teams, managing product requirements and execution.
+  - year:
+      start: 2012-05-02
+      end: 2014-05-01
+    company: Thermo Fisher Scientific
+    icon: tfs.png
+    role: Software Engineer
+    department: Synthetic Biology
+    summary:
+      - Lead the development of algorithms for multiple cloning technologies in synthetic biology.
+      - Develop new software modules and libraries for company's premiere bioinformatics tool suite.
+      - Re-engineer multiple sequence alignment software for performance and efficiency.
+      - Liaise and collaborate with scientists and postdoctoral researchers in the academe, finding ways to improve existing software product offerings.
+  - year:
+      start: 2011-08-24
+      end: 2012-05-01
+    company: NCS Group
+    icon: ncs.png
+    role: Senior Consultant
+    department: Service-Wide Hosting Environment
+    summary:
+      - Technical Lead for SMS notification platform and common service framework for public facing service portals built on Oracle middleware and database technologies.
+  - year:
+      start: 2010-08-24
+      end: 2011-08-23
+    company: LEO Tech Services
+    icon: leo.png
+    role: Software Developer
+    summary:
+      - Part of an Agile team that built a highly concurrent, real-time dashboard for a financial system for high frequency trading based on Java technologies and frameworks, making heavy use of enterprise messaging.
+  - year:
+      start: 2009-03-01
+      end: 2010-06-27
+    company: Blue Blade Technologies
+    icon: ateneo.jpg
+    role: Software Engineer
+    summary:
+      - Full stack developer for company's flagship SaaS for sales automation and inventory management for SMEs
+      - Software is built on open-source technologies, hosted on a grid infrastructure (now known as cloud) and integrates with ERP systems (e.g. Netsuite)
+      - Delivered the pioneer releases of the product for customers, resulting in quicker turnaround for inventory and sales reporting for customers
+      - Managed system infrastructure (GoGrid) and application delivery
+
+  - year:
+      start: 2006-01-06
+      end: 2008-09-28
+    company: ROHM LSI Design
+    icon: rohm.png
+    role: Layout Engineer
+    summary:
+      - Started out as a layout engineer doing chip design. Eventually found my passion for software and developed layout automation tools for cell libraries.

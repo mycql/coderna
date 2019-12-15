@@ -1,0 +1,75 @@
+$timeline-outline-bg = lightgray
+
+.author-experience-items
+  display: flex
+  flex-direction: column
+
+  .author-experience-item
+    display: flex
+    flex-direction: row
+    flex: 1 1 auto
+    min-width: 0
+    margin: 10px 0 10px 0
+
+    .author-experience-header
+      display: flex
+      flex-direction: row
+      min-width: 300px
+
+      .author-experience-icon
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: $timeline-outline-bg
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &[hidden="true"]
+          visibility: hidden
+
+        > img
+          width: 40px
+          height: 40px
+          background-color: white
+
+      .author-experience-summary
+        flex: 1 1 auto
+        min-width: 0
+
+        .author-experience-role
+          font-weight: bold;
+
+        .author-experience-splitter
+          background-color: $timeline-outline-bg
+          height: 5px
+
+        .author-experience-period
+          font-style: italic
+
+        .author-experience-role, .author-experience-period
+          margin-left: 10px
+
+    .author-experience-body
+      lex: 1 1 auto
+      min-width: 0
+
+      ul
+        list-style-type: none
+        padding-left: 5px
+        margin: 0
+
+        li
+          margin-bottom: 5px
+
+@media screen and (max-width: 670px)
+  .author-experience-items
+    .author-experience-item
+      flex-direction: column
+
+      .author-experience-header
+        margin-bottom: 10px
+
+        .author-experience-icon
+          &[hidden="true"]
+            display: none

@@ -1,0 +1,50 @@
+<%
+  let monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  let startDate, startYear, startMonthIdx, startMonth;
+  let endDate, endYear, endMonthIdx, endMonth, lastCompany;
+%>
+<div class="author-experience-items">
+  <% for (let experience of experiences) { %>
+    <div class="author-experience-item">
+      <div class="author-experience-header">
+        <div class="author-experience-icon" hidden="<%= lastCompany === experience.company ? true : false %>">
+          <img class="author-experience-icon" src="<%= '/images/' + experience.icon %>">
+        </div>
+        <div class="author-experience-summary">
+          <div class="author-experience-role"><%= experience.role %></div>
+          <div class="author-experience-splitter"></div>
+          <div class="author-experience-period">
+            <%
+              startDate = new Date(experience.year.start);
+              startYear = startDate.getFullYear();
+              startMonthIdx = startDate.getMonth();
+              startMonth = monthNames[startMonthIdx];
+              endDate = new Date(experience.year.end);
+            %>
+            <span><%= startMonth %> <%= startYear %></span>
+            <span>-</span>
+            <% if (isNaN(endDate.getTime())) { %>
+              <span><%= experience.year.end %></span>
+            <% } else {
+              endMonthIdx = endDate.getMonth();
+              endMonth = monthNames[endMonthIdx];
+              endYear = endDate.getFullYear();
+            %>
+              <span><%= endMonth %> <%= endYear %></span>
+            <% } %>
+          </div>
+        </div>
+      </div>
+      <div class="author-experience-body">
+        <ul>
+          <% for (let summary of experience.summary) { %>
+            <li><%= summary %></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+    <%
+      lastCompany = experience.company;
+    %>
+  <% } %>
+</div>

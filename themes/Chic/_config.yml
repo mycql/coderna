@@ -15,8 +15,8 @@ favicon: /favicon.ico
 nickname: Chris Luna
 
 ### this variable is MarkDown form.
-description: To really know is to be transformed by what one knows <br>--*The Song of the Bird*
-avatar: /image/bio-photo.jpg
+description: To really know is to be transformed by what one knows<br/>--*The Song of the Bird*<br/>If you lie down with dogs, you will get up with fleas<br/>--*Poor Richard\'s Almanac by Benjamin Franklin*
+avatar: /images/bio-photo.jpg
 
 # main menu navigation
 ## links key words should not be changed.
@@ -70,7 +70,7 @@ post_copyright_permalink_enable: true
 post_copyright_license_enable: true
 post_copyright_license_text: Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE
 post_copyright_slogan_enable: true
-post_copyright_slogan_text: To really know is to be transformed by what one knows
+post_copyright_slogan_text: Qui cum canibus concumbunt cum pulicibus surgent
 ## toc
 post_toc_enable: true
 
