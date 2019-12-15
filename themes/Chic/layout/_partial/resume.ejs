@@ -8,7 +8,7 @@
     <div class="author-experience-item">
       <div class="author-experience-header">
         <div class="author-experience-icon" hidden="<%= lastCompany === experience.company ? true : false %>">
-          <img class="author-experience-icon" src="<%= '/images/' + experience.icon %>">
+          <img class="author-experience-icon" src="<%= url_for('/images') + '/' + experience.icon %>">
         </div>
         <div class="author-experience-summary">
           <div class="author-experience-role"><%= experience.role %></div>
